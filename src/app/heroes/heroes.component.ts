@@ -3,6 +3,7 @@ import { Hero } from '../model/interfaces';
 import {NgFor, NgIf, UpperCasePipe} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {HEROES} from "../services/heroes.service";
+import {HeroDetailComponent} from "../hero-detail/hero-detail.component";
 
 @Component({
   selector: 'app-heroes',
@@ -11,7 +12,8 @@ import {HEROES} from "../services/heroes.service";
     UpperCasePipe,
     FormsModule,
     NgFor,
-    NgIf
+    NgIf,
+    HeroDetailComponent
   ],
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.scss'
