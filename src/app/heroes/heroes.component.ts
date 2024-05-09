@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Hero } from '../model/interfaces';
-import {UpperCasePipe} from "@angular/common";
+import {NgFor, UpperCasePipe} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {HEROES} from "../services/heroes.service";
 
@@ -9,7 +9,8 @@ import {HEROES} from "../services/heroes.service";
   standalone: true,
   imports: [
     UpperCasePipe,
-    FormsModule
+    FormsModule,
+    NgFor
   ],
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.scss'
