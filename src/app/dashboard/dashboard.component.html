@@ -1,1 +1,8 @@
-<p>dashboard works!</p>
+<!-- HTML -->
+<!-- VISTA dashboard.component.html -->
+<h2>Top Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes">
+    {{hero.name}}
+  </a>
+</div>
