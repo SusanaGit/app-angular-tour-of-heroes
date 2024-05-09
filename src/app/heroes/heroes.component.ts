@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { Hero } from '../model/interfaces';
+import {UpperCasePipe} from "@angular/common";
 
 @Component({
   selector: 'app-heroes',
   standalone: true,
-  imports: [],
+  imports: [
+    UpperCasePipe
+  ],
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.scss'
 })
