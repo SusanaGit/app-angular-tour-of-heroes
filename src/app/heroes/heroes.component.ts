@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Hero } from '../model/interfaces';
 import {NgFor, NgIf, UpperCasePipe} from "@angular/common";
 import {FormsModule} from "@angular/forms";
-import {HEROES} from "../services/heroes.service";
 import {HeroDetailComponent} from "../hero-detail/hero-detail.component";
+import { HeroService } from '../services/hero.service';
 
 @Component({
   selector: 'app-heroes',
@@ -20,9 +20,10 @@ import {HeroDetailComponent} from "../hero-detail/hero-detail.component";
 })
 export class HeroesComponent {
 
-  heroes = HEROES;
-
   selectedHero?: Hero;
+
+  heroes: Hero[] = [];
+
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
