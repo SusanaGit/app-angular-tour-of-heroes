@@ -19,4 +19,7 @@ export class HeroesComponent {
 
   heroes = HEROES;
 
+  onSelect(hero: Hero) {
+    console.log('test', hero.name);
+  }
 }
