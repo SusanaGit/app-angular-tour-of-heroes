@@ -10,7 +10,7 @@ import {NgFor} from "@angular/common";
   imports: [
     NgFor
   ],
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
