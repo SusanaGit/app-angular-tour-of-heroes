@@ -24,6 +24,10 @@ export class HeroesComponent {
 
   heroes: Hero[] = [];
 
+  constructor(private heroService: HeroService) {
+
+  }
+
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
