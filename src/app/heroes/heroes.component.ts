@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Hero } from '../model/interfaces';
 import {UpperCasePipe} from "@angular/common";
 import {FormsModule} from "@angular/forms";
+import {HEROES} from "../services/heroes.service";
 
 @Component({
   selector: 'app-heroes',
@@ -15,9 +16,6 @@ import {FormsModule} from "@angular/forms";
 })
 export class HeroesComponent {
 
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm'
-  };
+  heroes = HEROES;
 
 }
