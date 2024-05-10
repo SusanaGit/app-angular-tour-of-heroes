@@ -10,6 +10,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class HeroService {
 
+  private heroesUrl = 'api/heroes';  // URL to web api
+
   constructor(
     private http: HttpClient,
     private messageService: MessageService) { }
