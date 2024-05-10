@@ -3,6 +3,7 @@ import { HEROES} from "./heroes.service";
 import { Hero} from "../model/interfaces";
 import { Observable, of } from 'rxjs';
 import { MessageService } from './message.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
