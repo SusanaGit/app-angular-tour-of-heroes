@@ -28,4 +28,8 @@ export class HeroService {
     return of(hero);
   }
 
+  /** Log a HeroService message with the MessageService */
+  private log(message: string) {
+    this.messageService.add(`HeroService: ${message}`);
+  }
 }
